@@ -8,11 +8,12 @@ Summary:	%{_pearname} - methods for creating cascading style sheets (CSS)
 Summary(pl):	%{_pearname} - metody do tworzenia stylów kaskadowych (CSS)
 Name:		php-pear-%{_pearname}
 Version:	1.1
-Release:	3
+Release:	4
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	0f8b7bb55592803c1fa610112f80c9d9
+Patch0:		%{name}-path_fix.patch
 URL:		http://pear.php.net/package/XML_CSSML/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -47,13 +48,14 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}_%{_subclass}/%{_subclass}
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
 
-install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}_%{_subclass}
-install %{_pearname}-%{version}/%{_subclass}/* $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}_%{_subclass}/%{_subclass}/
+install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install %{_pearname}-%{version}/%{_subclass}/* $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -61,7 +63,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc %{_pearname}-%{version}/docs/*
-%dir %{php_pear_dir}/%{_class}_%{_subclass}
-%dir %{php_pear_dir}/%{_class}_%{_subclass}/%{_subclass}
-%{php_pear_dir}/%{_class}_%{_subclass}/*.php
-%{php_pear_dir}/%{_class}_%{_subclass}/%{_subclass}/*
+%{php_pear_dir}/%{_class}/*.php
+%{php_pear_dir}/%{_class}/%{_subclass}
