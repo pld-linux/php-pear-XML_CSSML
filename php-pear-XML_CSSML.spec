@@ -30,7 +30,7 @@ the xslt extension (part of the sablotron libraries). You may see an
 example usage of this class at the follow url:
 http://mojave.mojavelinux.com/forum/viewtopic.php?p=22#22
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Najlepszym sposobem na opisanie tej biblioteki jest sklasyfikowanie
