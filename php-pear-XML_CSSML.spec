@@ -2,8 +2,8 @@
 %define         _class          XML
 %define         _subclass       CSSML
 %define		_pearname	%{_class}_%{_subclass}
-Summary:	%{_class}_%{_subclass} - methods for creating cascading style sheets (CSS)
-Summary(pl):	%{_class}_%{_subclass} - metody do tworzenia stylów kaskadowych (CSS)
+Summary:	%{_pearname} - methods for creating cascading style sheets (CSS)
+Summary(pl):	%{_pearname} - metody do tworzenia stylów kaskadowych (CSS)
 Name:		php-pear-%{_pearname}
 Version:	1.1
 Release:	1
