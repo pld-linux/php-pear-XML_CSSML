@@ -38,10 +38,10 @@ jej jako system szablonów do generowania arkuszy CSS. Jest idealny do
 przechowywania wszystkich CSS w jednym miejscu i pozwalania na
 analizowanie ich w miarê potrzeby przy u¿yciu filtrów, zarówno
 ogólnego, jak i dla przegl±darek - podanych w atrybucie znaczników
-stylu. Biblioteka mo¿e polegaæ na rozszerzeniu PEARa libxslt (bêd±cego
-czê¶ci± xmldom) lub rozszerzeniu xslt (bêd±cego czê¶ci± bibliotek
-sablotron). Przyk³ad u¿ycia klasy mo¿na obejrzeæ pod adresem:
-http://mojave.mojavelinux.com/forum/viewtopic.php?p=22#22
+stylu. Biblioteka mo¿e polegaæ na rozszerzeniu PEAR-a libxslt
+(bêd±cego czê¶ci± xmldom) lub rozszerzeniu xslt (bêd±cego czê¶ci±
+bibliotek sablotron). Przyk³ad u¿ycia klasy mo¿na obejrzeæ pod
+adresem: http://mojave.mojavelinux.com/forum/viewtopic.php?p=22#22
 
 Ta klasa ma w PEAR status: %{_status}.
 
