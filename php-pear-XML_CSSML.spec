@@ -1,7 +1,8 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          XML
-%define         _subclass       CSSML
+%define		_class		XML
+%define		_subclass	CSSML
 %define		_pearname	%{_class}_%{_subclass}
+
 Summary:	%{_pearname} - methods for creating cascading style sheets (CSS)
 Summary(pl):	%{_pearname} - metody do tworzenia stylów kaskadowych (CSS)
 Name:		php-pear-%{_pearname}
