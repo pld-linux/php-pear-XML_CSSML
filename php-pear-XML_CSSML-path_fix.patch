@@ -1,0 +1,11 @@
+--- php-pear-XML_CSSML-1.1/XML_CSSML-1.1/CSSML.php~	2002-05-21 00:05:30.000000000 +0200
++++ php-pear-XML_CSSML-1.1/XML_CSSML-1.1/CSSML.php	2004-12-04 23:45:15.836077552 +0100
+@@ -39,7 +39,7 @@
+ // {{{ includes
+ 
+ require_once 'PEAR.php';
+-require_once 'CSSML/error.php';
++require_once 'XML/CSSML/error.php';
+ 
+ // }}}
+ // {{{ functions
