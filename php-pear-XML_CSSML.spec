@@ -1,6 +1,7 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		XML
 %define		_subclass	CSSML
+%define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - methods for creating cascading style sheets (CSS)
@@ -10,8 +11,8 @@ Version:	1.1
 Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-# Source0-md5:	0f8b7bb55592803c1fa610112f80c9d9
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	0f8b7bb55592803c1fa610112f80c9d9
 URL:		http://pear.php.net/package/XML_CSSML/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -29,6 +30,8 @@ the xslt extension (part of the sablotron libraries). You may see an
 example usage of this class at the follow url:
 http://mojave.mojavelinux.com/forum/viewtopic.php?p=22#22
 
+This class has in PEAR status: %{_status}.
+
 %description -l pl
 Najlepszym sposobem na opisanie tej biblioteki jest sklasyfikowanie
 jej jako system szablonów do generowania arkuszy CSS. Jest idealny do
@@ -39,6 +42,8 @@ stylu. Biblioteka mo¿e polegaæ na rozszerzeniu peara libxslt (bêd±cego
 czê¶ci± xmldom) lub rozszerzeniu xslt (bêd±cego czê¶ci± bibliotek
 sablotron). Przyk³ad u¿ycia klasy mo¿na obejrzeæ pod adresem:
 http://mojave.mojavelinux.com/forum/viewtopic.php?p=22#22
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
