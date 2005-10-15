@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - methods for creating cascading style sheets (CSS)
 Summary(pl):	%{_pearname} - metody do tworzenia stylów kaskadowych (CSS)
 Name:		php-pear-%{_pearname}
-Version:	1.1
-Release:	5
+Version:	1.1.1
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	0f8b7bb55592803c1fa610112f80c9d9
+# Source0-md5:	30913ea7139ed4242c17b69737f074f0
 Patch0:		%{name}-path_fix.patch
 URL:		http://pear.php.net/package/XML_CSSML/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -50,15 +50,11 @@ Ta klasa ma w PEAR status: %{_status}.
 %pear_package_setup
 
 install -d docs/%{_pearname}
-mv ./%{php_pear_dir}/%{_pearname}/docs/* docs/%{_pearname}
-mv ./%{php_pear_dir}/data/%{_pearname}/docs/* docs/%{_pearname}
+mv ./%{php_pear_dir}/%{_class}/docs/* docs/%{_pearname}
 
-# http://pear.php.net/bugs/bug.php?id=5574
-cd ./%{php_pear_dir}
-mv %{_pearname} %{_class}
-ln -snf %{_class} %{_pearname}
-cd %{_class}
-%patch0 -p2
+# we do backward compat with symlink.
+rm -rf ./%{php_pear_dir}/%{_pearname}
+ln -snf %{_class} ./%{php_pear_dir}%{_pearname}
 
 %install
 rm -rf $RPM_BUILD_ROOT
