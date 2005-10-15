@@ -8,7 +8,7 @@ Summary:	%{_pearname} - methods for creating cascading style sheets (CSS)
 Summary(pl):	%{_pearname} - metody do tworzenia stylów kaskadowych (CSS)
 Name:		php-pear-%{_pearname}
 Version:	1.1.1
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -54,12 +54,12 @@ mv ./%{php_pear_dir}/%{_class}/docs/* docs/%{_pearname}
 
 # we do backward compat with symlink.
 rm -rf ./%{php_pear_dir}/%{_pearname}
-ln -snf %{_class} ./%{php_pear_dir}%{_pearname}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}
 %pear_package_install
+ln -s %{_class} $RPM_BUILD_ROOT%{php_pear_dir}/%{_pearname}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
