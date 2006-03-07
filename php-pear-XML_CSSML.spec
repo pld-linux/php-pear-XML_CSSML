@@ -15,6 +15,7 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	30913ea7139ed4242c17b69737f074f0
 Patch0:		%{name}-path_fix.patch
 URL:		http://pear.php.net/package/XML_CSSML/
+BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-common < 3:5.0.0
 Requires:	php-pear
