@@ -17,6 +17,7 @@ Patch0:		%{name}-path_fix.patch
 URL:		http://pear.php.net/package/XML_CSSML/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
+BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-common < 3:5.0.0
 Requires:	php-pear
 BuildArch:	noarch
