@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - methods for creating cascading style sheets (CSS)
-Summary(pl):	%{_pearname} - metody do tworzenia stylów kaskadowych (CSS)
+Summary(pl.UTF-8):   %{_pearname} - metody do tworzenia stylÃ³w kaskadowych (CSS)
 Name:		php-pear-%{_pearname}
 Version:	1.1.1
 Release:	3
@@ -36,15 +36,15 @@ example usage of this class at the follow url:
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
+%description -l pl.UTF-8
 Najlepszym sposobem na opisanie tej biblioteki jest sklasyfikowanie
-jej jako system szablonów do generowania arkuszy CSS. Jest idealny do
+jej jako system szablonÃ³w do generowania arkuszy CSS. Jest idealny do
 przechowywania wszystkich CSS w jednym miejscu i pozwalania na
-analizowanie ich w miarê potrzeby przy u¿yciu filtrów, zarówno
-ogólnego, jak i dla przegl±darek - podanych w atrybucie znaczników
-stylu. Biblioteka mo¿e polegaæ na rozszerzeniu PEAR-a libxslt
-(bêd±cego czê¶ci± xmldom) lub rozszerzeniu xslt (bêd±cego czê¶ci±
-bibliotek sablotron). Przyk³ad u¿ycia klasy mo¿na obejrzeæ pod
+analizowanie ich w miarÄ™ potrzeby przy uÅ¼yciu filtrÃ³w, zarÃ³wno
+ogÃ³lnego, jak i dla przeglÄ…darek - podanych w atrybucie znacznikÃ³w
+stylu. Biblioteka moÅ¼e polegaÄ‡ na rozszerzeniu PEAR-a libxslt
+(bÄ™dÄ…cego czÄ™Å›ciÄ… xmldom) lub rozszerzeniu xslt (bÄ™dÄ…cego czÄ™Å›ciÄ…
+bibliotek sablotron). PrzykÅ‚ad uÅ¼ycia klasy moÅ¼na obejrzeÄ‡ pod
 adresem: <http://mojave.mojavelinux.com/forum/viewtopic.php?p=22#22>
 
 Ta klasa ma w PEAR status: %{_status}.
