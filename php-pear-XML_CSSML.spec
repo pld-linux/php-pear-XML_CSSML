@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - methods for creating cascading style sheets (CSS)
-Summary(pl.UTF-8):   %{_pearname} - metody do tworzenia stylów kaskadowych (CSS)
+Summary(pl.UTF-8):	%{_pearname} - metody do tworzenia stylów kaskadowych (CSS)
 Name:		php-pear-%{_pearname}
 Version:	1.1.1
 Release:	3
