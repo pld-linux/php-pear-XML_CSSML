@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.php
 %define		_class		XML
 %define		_subclass	CSSML
 %define		_status		stable
